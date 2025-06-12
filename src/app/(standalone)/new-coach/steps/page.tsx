@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Button } from '@/shared/Button';
 import Step1 from '../_steps/Step1';
 import Step2 from '../_steps/Step2';
@@ -12,18 +12,12 @@ import Step7 from '../_steps/Step7';
 import Step8 from '../_steps/Step8';
 import Step9 from '../_steps/Step9';
 import Step10 from '../_steps/Step10';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import type { Swiper as SwiperType } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 
 export default function NewCoach() {
   const questions = Array.from({ length: 10 }, (_, i) => `Question ${i + 1}`);
   const [answers, setAnswers] = useState<string[]>(Array(10).fill(''));
   const [step, setStep] = useState(0);
-  const swiperRef = useRef<SwiperType | null>(null);
 
 
   const steps = [
@@ -48,28 +42,23 @@ export default function NewCoach() {
     });
   };
 
-  const prevStep = () => swiperRef.current?.slidePrev();
-  const nextStep = () => swiperRef.current?.slideNext();
+  const prevStep = () => setStep((s) => Math.max(0, s - 1));
+  const nextStep = () => setStep((s) => Math.min(steps.length - 1, s + 1));
 
   return (
-    <div className="flex min-h-0 flex-col items-center gap-y-6 p-6">
-      <Swiper
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
-        onSwiper={(s) => (swiperRef.current = s)}
-        onSlideChange={(s) => setStep(s.activeIndex)}
-        className="w-full flex-1"
-      >
-        {steps.map((StepComponent, i) => (
-          <SwiperSlide key={`step-${i}`} className="flex justify-center">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-y-6 p-6">
+      <div className="flex w-full flex-1 items-center justify-center">
+        {(() => {
+          const StepComponent = steps[step];
+          return (
             <StepComponent
-              question={questions[i]}
-              value={answers[i]}
-              onChange={(val) => handleChange(i, val)}
+              question={questions[step]}
+              value={answers[step]}
+              onChange={(val) => handleChange(step, val)}
             />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          );
+        })()}
+      </div>
 
       <div className="flex gap-x-2">
         <Button
