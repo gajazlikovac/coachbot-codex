@@ -1,24 +1,23 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Button } from '@/shared/Button';
-import Step1 from '../_steps/Step1';
-import Step2 from '../_steps/Step2';
-import Step3 from '../_steps/Step3';
-import Step4 from '../_steps/Step4';
-import Step5 from '../_steps/Step5';
-import Step6 from '../_steps/Step6';
-import Step7 from '../_steps/Step7';
-import Step8 from '../_steps/Step8';
-import Step9 from '../_steps/Step9';
-import Step10 from '../_steps/Step10';
-
+import { useState } from "react";
+import { Button } from "@/shared/Button";
+import { Logo } from "@/shared/Logo";
+import Step1 from "../_steps/Step1";
+import Step2 from "../_steps/Step2";
+import Step3 from "../_steps/Step3";
+import Step4 from "../_steps/Step4";
+import Step5 from "../_steps/Step5";
+import Step6 from "../_steps/Step6";
+import Step7 from "../_steps/Step7";
+import Step8 from "../_steps/Step8";
+import Step9 from "../_steps/Step9";
+import Step10 from "../_steps/Step10";
 
 export default function NewCoach() {
   const questions = Array.from({ length: 10 }, (_, i) => `Question ${i + 1}`);
-  const [answers, setAnswers] = useState<string[]>(Array(10).fill(''));
+  const [answers, setAnswers] = useState<string[]>(Array(10).fill(""));
   const [step, setStep] = useState(0);
-
 
   const steps = [
     Step1,
@@ -47,6 +46,15 @@ export default function NewCoach() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-y-6 p-6">
+      <Logo className="mx-auto mb-4 h-10 w-auto" />
+      <div className="mb-4 flex justify-center gap-x-2">
+        {questions.map((_, i) => (
+          <span
+            key={i}
+            className={`h-2 w-2 rounded-full ${i === step ? "bg-blue-400" : "bg-gray-400"}`}
+          />
+        ))}
+      </div>
       <div className="flex w-full flex-1 items-center justify-center">
         {(() => {
           const StepComponent = steps[step];
