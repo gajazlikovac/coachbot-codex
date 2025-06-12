@@ -114,7 +114,7 @@ export function NewAssistantButton({
           'w-full text-nowrap rounded-xl p-3 text-base font-semibold text-main hover:z-20 hover:bg-background',
           className
         )}
-        href={`/create-agent`}
+        href={`/new-coach`}
         onClick={() => onClick?.()}
       >
         <i className={`cbi-add-square ${iconClassName}`} />

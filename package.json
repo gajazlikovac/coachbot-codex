@@ -33,9 +33,9 @@
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "stripe": "^18.2.0",
+    "swiper": "^11.2.8",
     "uuid": "^11.1.0",
-    "zod": "^3.25.42",
-    "swiper": "^11.1.0"
+    "zod": "^3.25.42"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
