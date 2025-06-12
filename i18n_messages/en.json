@@ -1,0 +1,898 @@
+{
+  "Account": {
+    "DeleteModal": {
+      "title": "Delete Account",
+      "warning": "This action cannot be undone. All your data will be permanently deleted. Please confirm your credentials to proceed.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Confirm your email",
+      "emailRequired": "Email is required",
+      "emailMismatch": "Email does not match your account",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "passwordRequired": "Password is required",
+      "passwordInvalid": "Password must be at least 6 characters",
+      "submitButton": "Delete",
+      "deletingMessage": "Deleting your account...",
+      "errors": {
+        "deleteFailed": "Failed to delete account. Please try again."
+      }
+    },
+    "Sidebar": {
+      "addImageButton": "Upload image",
+      "logoutButton": "Logout Account",
+      "deleteButton": "Delete Account"
+    },
+    "UpgradePlan": {
+      "pricingButton": "View Pricing Plans",
+      "subTitle": "Our subscription plans are currently in development, giving you a great opportunity to enjoy full access for now!",
+      "title": "Upgrade your plan"
+    },
+    "accountForm": {
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "errors": {
+        "emptyName": "Name cannot be empty",
+        "invalidEmail": "Invalid email format",
+        "emptyEmail": "Email cannot be empty"
+      },
+      "successMessage": "User data successfully saved!"
+    },
+    "subTitle": "Manage your account preferences and personal details all in one place.",
+    "title": "Account Settings",
+    "Feedback": {
+      "title": "Studio Feature Requests & feedback",
+      "subTitle": "Let us know which features you’d love to see in Studio - and tell us why! Also a great spot to share any feedback",
+      "buttonTitle": "Share Your Ideas"
+    }
+  },
+  "Assistants": {
+    "createButton": "Create new AI Coach",
+    "selectTitle": "AI Coach",
+    "newForm": {
+      "namePlaceholder": "Enter AI Coach name",
+      "descriptionPlaceholder": "Enter description for your AI Coach",
+      "title": "Enter a name and a short description for your AI Coach.",
+      "subTitle": "If setting up an AI Coach from scratch feels challenging, you can use a preset as a starting point. Each preset is designed for a specific role, and you can customize it further to match your needs.",
+      "presetsLabel": "Presets",
+      "descriptionLabel": "Description",
+      "nameLabel": "Name",
+      "modeSelectionLabel": "AI Coach mode",
+      "modeOptions": {
+        "0": {
+          "title": "Full Access",
+          "description": "Your coach can view all interactions, including chat transcripts and usage data—helpful for personalized guidance, supervision, or research."
+        },
+        "1": {
+          "title": "High-Level Only",
+          "description": "Only general insights are shared, such as conversation topics and engagement trends—no access to full chat content."
+        },
+        "2": {
+          "title": "Fully Confidential",
+          "description": "Your coach cannot see any part of your conversations or usage data—your AI coaching remains entirely private."
+        }
+      },
+      "termConditionsFullAccessNote": "Full client history access which needs user consent - details in <link>Terms & Conditions</link>.",
+      "termConditionsConfidentialNote": "Access to full client history is limited - details in <link>Terms & Conditions</link>."
+    },
+    "modal": {
+      "title": "Create AI Coach",
+      "submitButton": "Create AI Coach",
+      "editTitle": "Update AI Coach"
+    },
+    "shareTitle": "Share AI Coach",
+    "copiedTooltip": "AI Coach link copied!",
+    "deleteModal": {
+      "deleteButton": "Delete",
+      "title": "Delete AI Coach",
+      "content": "Delete \"{name}\" AI Coach?"
+    },
+    "downloadButton": "Download"
+  },
+  "Auth": {
+    "ForgotPassword": {
+      "title": "Reset Password",
+      "description": "Enter your email address and we'll send you instructions to reset your password.",
+      "resetButton": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "resetEmailSent": "Password reset email has been sent. Please check your inbox.",
+      "resetFailed": "Failed to send reset email. Please try again."
+    },
+    "Login": {
+      "createAccountLink": "Create an account",
+      "emailPlaceholder": "Enter your email",
+      "emailRequiredError": "Email is required",
+      "forgotPasswordLink": "Forgot password?",
+      "haveAccountLabel": "Already have an account?",
+      "invalidEmailError": "Please, enter valid email.",
+      "loginButton": "Log In",
+      "nameInputPlaceholder": "Enter your name",
+      "newUserLabel": "New user?",
+      "passwordInavlidError": "Password length should be more than 6 symbols.",
+      "passwordPlaceholder": "Enter your password",
+      "passwordRequiredError": "Password is required.",
+      "rememberLabel": "Remember me",
+      "signupButton": "Continue",
+      "title": "Log In"
+    },
+    "Signup": {
+      "checkboxRequiredError": "Conset acceptance is required.",
+      "consent": "I consent to the processing of my personal data as outlined in the <link>Privacy Policy</link>, understanding how it will be used and protected.",
+      "nameRequiredError": "Name is required.",
+      "notification": "You'll receive an email with a confirmation link and further instructions to complete your account registration.",
+      "passwordMinLengthError": "Password length should be more than 6 symbols.",
+      "title": "Sign Up"
+    },
+    "errors": {
+      "signupFailed": "Signup failed. Please try again.",
+      "emailNotVerified": "Please verify your email address.",
+      "loginFailed": "Login failed. Please try again.",
+      "auth/email-already-in-use": "This email address is already associated with an account.",
+      "auth/user-not-found": "No user found with these credentials. The user may have been deleted.",
+      "auth/wrong-password": "The password is invalid or the user does not have a password.",
+      "auth/weak-password": "The password is not strong enough.",
+      "auth/invalid-email": "The email address is not valid.",
+      "auth/user-disabled": "This user account has been disabled.",
+      "auth/too-many-requests": "We have blocked all requests from this device due to unusual activity. Try again later.",
+      "auth/operation-not-allowed": "This sign-in method is not allowed. Please contact support.",
+      "auth/invalid-credential": "The sign-in credential is no longer valid. Please sign in again.",
+      "auth/invalid-verification-code": "The verification code you entered is invalid.",
+      "auth/invalid-verification-id": "The verification information you entered is invalid.",
+      "auth/captcha-check-failed": "The reCAPTCHA verification failed. Please try again.",
+      "auth/invalid-phone-number": "The phone number is not valid.",
+      "auth/missing-phone-number": "Please provide a phone number.",
+      "auth/quota-exceeded": "SMS quota exceeded. Please try again later.",
+      "auth/credential-already-in-use": "This credential is already associated with a different user account.",
+      "auth/requires-recent-login": "This operation is sensitive and requires recent authentication. Please log in again.",
+      "auth/provider-already-linked": "This account is already linked to another provider.",
+      "auth/code-expired": "This verification code has expired. Please request a new one.",
+      "auth/expired-action-code": "This action code has expired. Please request a new one.",
+      "auth/invalid-action-code": "The action code is invalid. This can happen if the code is malformed or has already been used.",
+      "auth/network-request-failed": "A network error occurred. Please check your connection and try again.",
+      "auth/popup-blocked": "The sign-in popup was blocked by your browser. Please enable popups and try again.",
+      "auth/popup-closed-by-user": "The sign-in popup was closed before completing the sign-in.",
+      "auth/cancelled-popup-request": "The sign-in operation was cancelled due to another sign-in being initiated.",
+      "auth/unauthorized-domain": "This domain is not authorized for OAuth operations.",
+      "auth/invalid-password": "The password is invalid. Please check your password and try again.",
+      "auth/unverified-email": "Please verify your email address before proceeding."
+    },
+    "Verification": {
+      "title": "Email Verification",
+      "success": {
+        "description": "Your email address has been successfully confirmed.",
+        "action": "Now you can log in with your new account. Redirecting..."
+      },
+      "pending": {
+        "description": "Please wait, we are verifying you email..."
+      },
+      "error": {
+        "description": "Error occurred during verification.",
+        "action": "Please try again later or "
+      }
+    }
+  },
+  "Chat": {
+    "styleOptions": {
+      "0": "Energetic",
+      "1": "Professional",
+      "2": "Casual",
+      "3": "Empathetic"
+    },
+    "styleOptionsLabel": "Conversation Style",
+    "inputPlaceholder": "Type your message here...",
+    "addStyleOption": "add Style",
+    "loadingInputPlaceholder": "Generating...",
+    "deleteModal": {
+      "submitButton": "Delete chat",
+      "content": "Are you sure you want to delete \"{name}\" chat?",
+      "title": "Delete chat"
+    },
+    "chatHistoryButton": "Chat History",
+    "newChatTitle": "New chat created!",
+    "newChatSubtitle": "Your conversation has been saved to chat history.",
+    "newChatButton": "New",
+    "ChatMode": {
+      "newUserTitle": "New user",
+      "recurringUserTitle": "Recurring user"
+    },
+    "sidebarTitle": "Chat History"
+  },
+  "Checkout": {
+    "priceTable": {
+      "mostPopularLabel": "Most popular",
+      "activePlanButton": "Cancel subscription",
+      "unlockButton": "Unlock now",
+      "interval": {
+        "monthly": "Monthly",
+        "yearly": "Annually"
+      },
+      "unsubscribeModal": {
+        "title": "Confirm Subscription Cancellation",
+        "buttonTitle": "Unsubscribe",
+        "contentKey": "Are you sure you want to cancel your \"{name}\" subscription?",
+        "cancelButton": "Close"
+      },
+      "currentPlanLabel": "Your current plan",
+      "contactUsButton": "Contact Us",
+      "trialBanner": {
+        "title": "Enjoy 14 days for free",
+        "description": "Add your credit card to activate — you’ll only be charged if you decide to continue after the trial."
+      }
+    },
+    "pricingTableConfig": {
+      "currencyLabel": "Choose Your Preferred Currency",
+      "promocodeLabel": "Have a promo code?",
+      "promocodePlaceholder": "Enter your promo code"
+    },
+    "Prices": {
+      "titles": {
+        "0": "Who it’s for",
+        "1": "Monthly Price",
+        "2": "Get Started",
+        "3": "Trial"
+      },
+      "annuallyLabel": "({price} billed annually)",
+      "monthlyLabel": "monthly"
+    }
+  },
+  "CoachDetails": {
+    "navigationOptions": {
+      "0": "Configuration",
+      "1": "Users",
+      "2": "Conversations",
+      "3": "Ratings",
+      "4": "Revenue"
+    },
+    "Config": {
+      "sidebarOptions": {
+        "0": {
+          "title": "Coach Profile",
+          "description": "Edit your coach's name and description to reflect its personality, style, and approach."
+        },
+        "1": {
+          "title": "Coach Transcript Sharing",
+          "description": "Manage how session transcripts are shared with the AI Coach."
+        },
+        "2": {
+          "title": "Marketplace listing",
+          "description": "Control who can access your AI Coach"
+        },
+        "3": {
+          "title": "Whatsapp integration",
+          "description": "Enable WhatsApp access to your AI Coach"
+        },
+        "4": {
+          "title": "GoalVision",
+          "description": "Activate growth guidance with default or custom directions."
+        },
+        "5": {
+          "title": "GoalTrack",
+          "description": "Set coaching goals your users can follow."
+        }
+      },
+      "TranscriptPage": {
+        "description": "Choose between full transparency for training or research purposes, or protect user privacy by only sharing high-level summaries with consent."
+      },
+      "MarketplacePage": {
+        "title": "Your AI Coach is Public",
+        "titlePrivate": "Your AI Coach is Private",
+        "description": "Control your Coach’s visibility — choose whether to list it publicly in the Marketplace to reach a broader audience, or keep it private and share it only with selected individuals via a direct link.",
+        "shareTitle": "Your AI Coach is not visible in the public Marketplace. Use the link below to share it with select users.",
+        "copyButton": "Copy link"
+      },
+      "MonetizationPage": {
+        "disabledTitle": "Monetization Disabled",
+        "enabledTitle": "Monetization Enabled",
+        "disabledDescription": "Your AI Coach is currently free to use",
+        "enabledDescription": "Users must subscribe to access your AI Coach.",
+        "priceForm": {
+          "curencyOptions": {
+            "usd": "USD – US Dollar",
+            "eur": "EUR – Euro",
+            "gbp": "GBP – British Pound",
+            "aud": "AUD – Australian Dollar",
+            "cad": "CAD - Canadian Dollar"
+          },
+          "currencyLabel": "Choose Your Preferred Currency",
+          "periodLabel": "Enter the price and select the period for the pricing",
+          "monthlyInputLabel": "*Monthly <addition>(Required)</addition>",
+          "yearlyInputLabel": "Yearly <addition>(Optional)</addition>",
+          "trialCheckbox": "Set up a 14-day trial period?",
+          "infoMessage": "To edit the price, please revert the coach's status to \"Draft.\"",
+          "supportMessage": "To change the access level of a published coach, please contact <link>support</link>.",
+          "supportTitle": "Change access level"
+        },
+        "priceFormDescription": "Setting up monetization is simple — just choose a currency, set your price, and select the subscription period."
+      },
+      "IntegrationPage": {
+        "notConnectedTitle": "Not Connected",
+        "connectedTitle": "Connected",
+        "notConnectedDescription": "WhatsApp sync hasn’t been activated yet.",
+        "connectedDescription": "WhatsApp sync is live and running smoothly!",
+        "whatsappDescription": "Once WhatsApp access is enabled, all conversations with your AI Coach via WhatsApp will appear in the Conversations section. You’ll be able to view, comment on, and download these sessions just like any others — making it easier to track and manage coaching interactions across platforms."
+      },
+      "GoalVisionPage": {
+        "description": "GoalVision allows your AI Coach to guide users through structured growth directions.",
+        "categoriesAreaTitile": "You can always replace them with your own focus areas to match your coaching style.",
+        "topicCounter": {
+          "minLabel": "Min {count} topics",
+          "maxLabel": "Max {count} topics"
+        },
+        "CategoriesManager": {
+          "topicDescriptionLable": "Topic Description"
+        }
+      },
+      "ProfilePage": {
+        "description": "Craft a clear identity for your AI Coach. A well-defined name and description help users understand what to expect and build trust from the very first interaction."
+      }
+    },
+    "pageTitle": "Details",
+    "Users": {
+      "searchPlaceholder": "Search session by name, email, or date...",
+      "filterOptions": {
+        "0": "All time",
+        "1": "Last 7 days",
+        "2": "Last 30 days",
+        "3": "Inactive"
+      },
+      "firstSessionLabel": "First session",
+      "lastSessionLabel": "Last session",
+      "totalSessionsLabel": "Total sessions",
+      "reportButton": "Report",
+      "SessionAnalytics": {
+        "analyticCards": {
+          "0": "Weekly interactions",
+          "1": "Monthly interactions",
+          "2": "All-time sessions",
+          "3": "Avg. session length"
+        }
+      },
+      "DashboardTabs": {
+        "0": "Sessions",
+        "1": "GoalVision",
+        "2": "GoalTrack"
+      },
+      "SessionsList": {
+        "messagesLabel": "messages",
+        "viewSessionButton": "View Session"
+      },
+      "inactiveLabel": "Inactive"
+    }
+  },
+  "Common": {
+    "shareModal": {
+      "title": "Share to Social",
+      "subTitle": "Choose a platform to share or copy the link"
+    },
+    "messageErrorText": "Some error occured. Please try again.",
+    "Onboarding": {
+      "steps": {
+        "1": {
+          "title": "Welcome to the Studio — We're Glad You're Here!",
+          "description": "To kick things off, please watch this short welcome video from our founder.",
+          "subDescription": "When you're ready, click Next — let's dive in!"
+        },
+        "2": {
+          "title": "Desktop-First Experience",
+          "description": "Our AI Studio works best on desktop — mobile isn't fully supported yet."
+        },
+        "3": {
+          "title": "Navigation Tip"
+        },
+        "4": {
+          "title": "Two Types of AI Coaches You Can Build",
+          "items": {
+            "0": {
+              "title": "Junior AI Coach:",
+              "description": "For simple, on-demand automation."
+            },
+            "1": {
+              "title": "Senior AI Coach: ",
+              "description": "High-quality, tailored to your methodology and personality. Requires advanced prompting skills or a paid engagement with our expert team."
+            }
+          }
+        },
+        "5": {
+          "title": "Important: Content Ownership & Privacy",
+          "description": "Before you upload anything, please confirm you have full rights to the instructions and knowledge you're sharing.",
+          "subDescription": "Do not upload any personal, sensitive, or client data. Triple-check this before proceeding."
+        },
+        "6": {
+          "title": "Ready to Rock?",
+          "title1": "🎯 Book your <link>onboarding call</link> to chat about how we can best support your goals.",
+          "title2": "🎓 Explore our <link>CoachBot AI Academy</link> — a curated library of helpful videos to guide you from getting started to mastering prompt refinement like a pro.",
+          "subDescription": "Let's build something amazing — together."
+        }
+      }
+    },
+    "nextButton": "Next",
+    "letsStartButton": "Let’s Start"
+  },
+  "Customization": {
+    "Configuration": {
+      "title": "LLM Configuration",
+      "modelDropdownLabel": "Model",
+      "presetsDropdownTooltip": "Create a custom preset to save and reuse your LLM configuration effortlessly.",
+      "dropdown": {
+        "title": "Preset",
+        "customValueModal": {
+          "inputPlaceholder": "Enter Preset name",
+          "createButton": "add Preset",
+          "title": "New Settings Preset",
+          "content": "Save your custom LLM configuration as a preset for easy access and reuse in future sessions.",
+          "submitButton": "Create",
+          "renameButton": "Rename",
+          "renameTitle": "Rename your preset",
+          "deleteTitle": "Delete preset",
+          "deleteButton": "Delete",
+          "renameContent": "Rename your preset.",
+          "deleteContent": "Delete \"{name}\" prest?"
+        }
+      },
+      "settingsTitle": "Settings"
+    }
+  },
+  "Dashboard": {
+    "periodOptions": {
+      "0": "All time",
+      "1": "Last 7 days",
+      "2": "Last 30 days"
+    },
+    "statisticsCard": {
+      "0": "Total Agents",
+      "1": "Total Conversations",
+      "2": "Total Users",
+      "3": "Total Revenue",
+      "4": "User Satisfaction",
+      "5": "Personal Time Savings"
+    },
+    "assistantStatusOptions": {
+      "0": "Published",
+      "1": "Draft",
+      "2": "Archived"
+    },
+    "tokenCard": {
+      "usedLabel": "Used",
+      "tockenUsageLabel": "Token Usage",
+      "tockenAvailableLabel": "Available"
+    },
+    "accessLevelOptions": {
+      "0": "Free",
+      "1": "Premium"
+    },
+    "visibilityOptions": {
+      "0": "Public",
+      "1": "Private"
+    },
+    "assistantCard": {
+      "accessLevelLabel": "Monetization:",
+      "visibilityLabel": "Marketplace listing:",
+      "data": {
+        "0": "Conversations",
+        "1": "Users",
+        "2": "Rating",
+        "3": "Revenue"
+      },
+      "keyTopicsLabel": "Key topics:",
+      "lastUpdatedLabel": "Last Updated:",
+      "trialLabel": "Trial:",
+      "configPanel": {
+        "changePriceButton": "Change",
+        "copyLinkButton": "Share URL"
+      },
+      "menuItems": {
+        "0": "Publish AI Coach",
+        "1": "(to coachbot.ai)",
+        "2": "Integrate",
+        "3": "(to your website)",
+        "4": "Duplicate",
+        "5": "Download",
+        "6": "Archive",
+        "7": "Delete",
+        "8": "Revert to Draft"
+      },
+      "transcriptSharingLabel": "Coach Transcript Sharing:"
+    },
+    "Sidebar": {
+      "title": "Studio Dashboard"
+    },
+    "Header": {
+      "openSidebarButton": "Hide Summary",
+      "closedSidebarButton": "Show Summary"
+    },
+    "eptyState": {
+      "createButton": "Ready to create your first AI coach?"
+    }
+  },
+  "General": {
+    "Header": {
+      "navigation": {
+        "0": "Chat",
+        "1": "Lab",
+        "2": "Content upload",
+        "3": "Dashboard",
+        "4": "AI Config"
+      },
+      "accountButton": "Account",
+      "insightsButton": "INSIGHTS",
+      "openSidebarButton": "SIDEBAR",
+      "logoutButton": "Logout",
+      "backToAccountButton": "Back to Account"
+    },
+    "Instruction": {
+      "refreshButton": "Generate",
+      "userUpdatesButton": "User Updates",
+      "resetButton": "Reset Changes",
+      "saveButton": "Save Changes"
+    },
+    "closeButton": "Close",
+    "openButton": "Open",
+    "levelOptions": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "toneOptions": {
+      "friendly": "Friendly",
+      "supportive": "Supportive",
+      "professional": "Professional",
+      "energetic": "Energetic"
+    },
+    "cancelButton": "Cancel",
+    "saveButton": "Save",
+    "errors": {
+      "unexpectedError": "Unexpected error. Please, try again later.",
+      "minLength50": "The filed should contain at least 50 symbols.",
+      "minLength10": "The filed should contain at least 10 symbols.",
+      "maxLength2000": "The field should contain no more than 2000 symbols.",
+      "maxLength10000": "The field should contain no more than 10000 symbols.",
+      "emptyFiled": "The field should not be empty.",
+      "saveFailed": "Failed to save data. Please try again.",
+      "templateSelection": "Template is required.",
+      "noAssistantExist": "AI Coach not found. Please, create your first AI Coach."
+    },
+    "successMessages": {
+      "dataSaved": "Data saved successfully!",
+      "dataDeleted": "Data deleted successfully!"
+    },
+    "comingSoon": "Coming soon",
+    "shareLinkSuccess": "Link copied!",
+    "themeTogglerLabel": "Dark / Light Mode",
+    "dropdownEmptyPlaceholder": "Please, add first item",
+    "inDevelopmentLabel": "This feature will be available",
+    "createAssistantMessage": {
+      "title": "You need to create an AI Coach first! ",
+      "subTitle": "To start using the studio, please create your first AI Coach. Once set up, you'll be able to chat, fine-tune its behavior, and customize its responses.",
+      "modalLink": "Ready to create your first AI Coach"
+    },
+    "resetToOriginButton": "Reset to Original"
+  },
+  "Instructions": {
+    "pageTitle": "AI Coach Settings",
+    "systemInstruction": {
+      "tooltip": "These instructions will shape how the coach interacts with users",
+      "label": "System Instructions",
+      "title": "AI Coach Instructions",
+      "description": "Configure your system AI Coach instructions below. These will be applied to all your bot conversations unless overridden for specific sessions.",
+      "tipsOptions": {
+        "instructions": {
+          "title": "Main Instructions",
+          "options": {
+            "0": "Be specific about the coaching approach you want",
+            "1": "Include any particular areas of focus or expertise",
+            "2": "Specify preferred communication style",
+            "3": "List any topics or approaches to avoid",
+            "4": "Consider including example scenarios"
+          }
+        },
+        "onboarding": {
+          "title": "Onboarding Instructions",
+          "options": {
+            "0": "Outline the tone and style of the onboarding experience (e.g., friendly, professional)",
+            "1": "Specify key features or actions the assistant should highlight",
+            "2": "Include any mandatory steps the user must complete",
+            "3": "Mention any content or areas the assistant should avoid during onboarding",
+            "4": "Provide example onboarding scenarios or welcome messages"
+          }
+        }
+      },
+      "errors": {
+        "saveFailed": "Failed to save main instructions. Please try again.",
+        "resetFailed": "Failed to reset main instructions. Please try again.",
+        "emptyInstructions": "Please fill in the instructions field."
+      },
+      "successMessages": "Instructions updated successfully!"
+    },
+    "onboardingInstruction": {
+      "tooltip": "These instructions will guide how the assistant supports users during onboarding",
+      "label": "Onboarding Instructions",
+      "title": "AI Onboarding Assistant Instructions",
+      "description": "Set up your AI assistant's onboarding instructions below. These will determine how the assistant welcomes and guides new users through their first steps."
+    },
+    "tipsTitle": "Tips for Effective Instructions",
+    "topNavigationOptions": {
+      "0": "Main Instructions",
+      "1": "Stage Settings",
+      "2": "Moderation Settings",
+      "3": "Tone of Voice",
+      "4": "Onboarding"
+    },
+    "Stages": {
+      "tipsTitle": "Stage Configuration Help",
+      "tips": {
+        "instructions": {
+          "title": "Stage Instructions",
+          "options": {
+            "0": "Define the coach's behavior and objectives for this stage",
+            "1": "Specify any stage-specific patterns or responses",
+            "2": "Include examples of good responses if helpful"
+          }
+        },
+        "analyzer": {
+          "title": "Stage Analyzer",
+          "options": {
+            "0": "Define criteria for determining if stage goals are met",
+            "1": "Specify patterns or indicators of user readiness to progress",
+            "2": "Include examples of user responses that indicate completion"
+          }
+        }
+      },
+      "title": "Stage Configuration",
+      "dropdownTitle": "Select Stage",
+      "configurationTitle": "Configuration",
+      "stageInstructionsLabel": "Stage Instructions",
+      "instructionInputLabel": "Define how the coach should behave during this stage",
+      "analyzeInputLabel": "Define how to analyze user messages to determine if stage goals are met",
+      "analyzeLogicLabel": "Analyzer Logic",
+      "analyzeExpandTitle": "Stage Analyzer",
+      "dropdown": {
+        "title": "Stage",
+        "customValueModal": {
+          "inputPlaceholder": "Enter Stage name",
+          "createButton": "add Stage",
+          "title": "New Stage",
+          "content": "Give your stage a unique name and customize it to suit your preferences.",
+          "submitButton": "Create",
+          "renameButton": "Rename",
+          "renameTitle": "Rename your stage",
+          "deleteTitle": "Delete stage",
+          "deleteButton": "Delete",
+          "renameContent": "Rename your stage.",
+          "deleteContent": "Delete \"{name}\" stage?"
+        }
+      }
+    },
+    "Styles": {
+      "settingsTitle": "Style settings",
+      "title": "Conversation Styles",
+      "emojiDropdownTitle": "Emoji Frequency",
+      "languageDropdownTitle": "Language Complexity",
+      "toneDropdownTitle": "Tone",
+      "greetingInputLabel": "Greeting Templates",
+      "responseInputLabel": "Response Patterns",
+      "templatesInputLabel": "Closing Templates",
+      "tipsTitle": "Style Configuration Guide",
+      "tipsGuide": {
+        "ToneConfiguration": {
+          "title": "Tone Configuration",
+          "options": {
+            "0": "Be specific about personality traits (e.g., \"warm and encouraging\")",
+            "1": "Include emotional qualities (e.g., \"empathetic but professional\")",
+            "2": "Consider your target audience's preferences"
+          }
+        },
+        "EmojiFrequency": {
+          "title": "Emoji Frequency",
+          "options": {
+            "low": "Low: Formal business coaching",
+            "medium": "Medium: General coaching sessions",
+            "high": "High: Youth coaching or casual conversations"
+          }
+        },
+        "LanguageComplexity": {
+          "title": "Language Complexity",
+          "options": {
+            "low": "Low: Clear, simple language for broad accessibility",
+            "medium": "Medium: Balanced professional language",
+            "high": "High: Advanced vocabulary for specialized coaching"
+          }
+        },
+        "TemplateGuidelines": {
+          "title": "Template Guidelines",
+          "nested": "Yes",
+          "options": {
+            "GreetingTemplates": {
+              "title": "Greeting Templates",
+              "options": {
+                "0": "Include variety for natural feel",
+                "1": "Consider time-of-day variations",
+                "2": "Incorporate personal elements",
+                "3": "Example: \"Hi {name}! Ready to explore your goals today? 🌟\""
+              }
+            },
+            "ResponsePatterns": {
+              "title": "Response Patterns",
+              "options": {
+                "0": "Use reflection techniques",
+                "1": "Include follow-up questions",
+                "2": "Mix validation and challenge",
+                "3": "Example: \"I hear that you're feeling {emotion}. What do you think is driving that?\""
+              }
+            },
+            "ClosingTemplates": {
+              "title": "Closing Templates",
+              "options": {
+                "0": "Summarize progress",
+                "1": "Set expectations for next session",
+                "2": "End with encouragement",
+                "3": "Example: \"You've made great progress today. Let's build on this next time!\""
+              }
+            }
+          }
+        },
+        "TipsForEffectiveStyles": {
+          "title": "Tips for Effective Styles",
+          "options": {
+            "point1": "Test templates with various scenarios",
+            "point2": "Ensure consistency across all elements",
+            "point3": "Consider cultural sensitivity",
+            "point4": "Regular review and refinement based on user feedback"
+          }
+        }
+      },
+      "dropdown": {
+        "title": "Conversation Styles",
+        "customValueModal": {
+          "title": "New conversation style",
+          "createButton": "add new Style",
+          "content": "Give your communication style a name and customize it to fit your needs",
+          "inputPlaceholder": "Enter Style name",
+          "submitButton": "Create",
+          "renameButton": "Rename",
+          "renameTitle": "Rename your style",
+          "deleteTitle": "Delete style",
+          "deleteButton": "Delete",
+          "renameContent": "Rename your communication style.",
+          "deleteContent": "Delete \"{name}\" communication style?"
+        }
+      },
+      "successMessage": "Styles updated successfully!"
+    },
+    "errors": {
+      "saveFailed": "Save failed. Please try again.",
+      "resetFailed": "Reset failed. Please try again.",
+      "generateFailed": "Generate failed. Please try again."
+    },
+    "ModerationRules": {
+      "title": "Moderation Rule",
+      "customRuleTooltip": "Enter a unique identifier for this rule",
+      "dropdown": {
+        "title": "Name",
+        "customValueModal": {
+          "inputPlaceholder": "Enter Rule name",
+          "createButton": "add Rule",
+          "title": "New Moderation Rule",
+          "content": "Give your moderation rule a unique name and customize it to suit your preferences.",
+          "submitButton": "Create",
+          "renameButton": "Rename",
+          "renameTitle": "Rename your rule",
+          "deleteTitle": "Delete rule",
+          "deleteButton": "Delete",
+          "renameContent": "Rename your moderation rule.",
+          "deleteContent": "Delete \"{name}\" moderation rule?"
+        }
+      },
+      "settingsTitle": "Settings",
+      "instructions": {
+        "triggers": "Triggers",
+        "purpose": "Purpose",
+        "whenToUse": "When to use",
+        "whenToDetect": "What to detect",
+        "triggersPlaceholder": "Enter the triggers",
+        "purposePlaceholder": "Describe the purpose",
+        "whenToUsePlaceholder": "Specify when to use it",
+        "whenToDetectPlaceholder": "Define what should be detected"
+      },
+      "instructionTitle": "Instruction",
+      "settings": {
+        "severityLabel": "Severity",
+        "categoriesLabel": "Categories",
+        "dropdown": {
+          "title": "Categories",
+          "customValueModal": {
+            "title": "New moderation Category",
+            "createButton": "add new Categories",
+            "content": "Create a new moderation category to organize and tailor your content filtering rules.",
+            "inputPlaceholder": "Enter Category name",
+            "submitButton": "Create",
+            "renameButton": "Rename",
+            "renameTitle": "Rename your category",
+            "deleteTitle": "Delete category",
+            "deleteButton": "Delete",
+            "renameContent": "Rename your category.",
+            "deleteContent": "Delete \"{name}\" category?"
+          },
+          "dropdownTitle": "Select Categories",
+          "dropdownLable": "Select Categories"
+        },
+        "noRuleSelectedError": "Parent rule is not selected."
+      },
+      "responseTemplateTitle": "Response Template"
+    }
+  },
+  "KnowledgeBase": {
+    "titile": "Smart Knowledge Hub",
+    "subTitile": "Easily add text documents you work with in coaching, and AI will process and organize the information you need.",
+    "addDocumentButton": "Upload more files",
+    "dropzoneLabel": "Drag & Drop your files here.",
+    "dropzoneDivider": "or",
+    "browseButton": "Upload files",
+    "usageNote": "You need to enable the document after uploading and processing it for the AI Coach to use its information.",
+    "modals": {
+      "delete": {
+        "titleKey": "Delete Document",
+        "buttonTitleKey": "Delete",
+        "contentKey": "Delete your knowledge document: \"{fileName}\" ?"
+      },
+      "edit": {
+        "titleKey": "Rename",
+        "buttonTitleKey": "Rename",
+        "contentKey": "Rename your document: \"{fileName}\" ?"
+      }
+    },
+    "processingText": "Processing & Analyzing…",
+    "errors": {
+      "unsupportedFormat": "Unsupported file format."
+    },
+    "fileTypesOptions": {
+      "0": "General Knowledge",
+      "1": "Specific Reference"
+    },
+    "fileTypesTooltips": {
+      "0": {
+        "title": "General Knowledge",
+        "description": "Uses built-in expertise to provide helpful answers without needing uploaded files."
+      },
+      "1": {
+        "title": "Specific References",
+        "description": "Lets you guide the AI Coach to use particular documents with <reference> tags for accuracy."
+      }
+    },
+    "supportedTypesLabel": "Supported file types: ",
+    "title": "Knowledge Integration",
+    "tips": {
+      "generalKnowledge": {
+        "title": "General Knowledge",
+        "subTitle": "General Knowledge provides automatic access to broad background information without needing specific citations. The system draws on this built-in expertise to offer contextually relevant guidance and insights."
+      },
+      "specificReference": {
+        "title": "Specific References",
+        "subTitle": "Specific References allow you to point to particular uploaded documents using the <reference> tag in prompts:",
+        "options": {
+          "point1": "To reference the entire document: <reference type=\"full\" document=\"File Name.pdf\" />",
+          "point2": "To reference a specific section by title: <reference type=\"section\" document=\"File Name.pdf\" section=\"Chapter 1: Generation\" />",
+          "point3": "To reference specific pages: <reference type=\"pages\" document=\"File Name.pdf\" pages=\"3-5\" />"
+        }
+      },
+      "common": {
+        "subTitle": "When using General Knowledge, the system leverages its comprehensive understanding to provide responses. When precision matters, Specific References ensure information is drawn directly from your exact source materials."
+      }
+    },
+    "errorText": "Upload failed! Please try again."
+  },
+  "Sidebar": {
+    "defaultTitle": "Insights",
+    "tabs": {
+      "0": "Details",
+      "1": "Progress",
+      "2": "Context"
+    },
+    "emptyTitle": "Hello {name}!",
+    "emptyDescription": "As you progress through the setup and interaction within Studio CoachBot.ai, the relevant session information will gradually appear to guide and support your workflow.",
+    "greetingTitle": "👋 GREETING"
+  },
+  "Whitelist": {
+    "title": "You're on the List!",
+    "description": "Thank you for signing up! We'll notify you as soon as Studio CoachBot.ai becomes available.",
+    "lable": "Stay tuned!"
+  }
+}

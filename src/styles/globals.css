@@ -1,0 +1,171 @@
+@import './theme.css';
+@import './icons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vh: 100dvh;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  color: white;
+  white-space: pre-wrap;
+}
+
+/* === Swiper slide peek effect === */
+.swiper-slide {
+  /* Don't let each slide take 100% width. Try 80-90%. */
+  width: 80% !important;
+  max-width: 480px;
+  /* Center content inside the slide */
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .swiper-slide {
+    width: 95% !important;
+    max-width: 95vw;
+  }
+}
+
+/* Optional: allow peeking by making swiper container overflow visible */
+.swiper {
+  overflow: visible !important;
+}
+
+@layer base {
+  .no-outline {
+    outline: none;
+    box-shadow: none;
+  }
+
+  i[class^='cbi-'] {
+    font-size: 18px;
+  }
+
+  *::-webkit-scrollbar {
+    width: 1px !important;
+    height: 1px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgba(var(--colors-main));
+    border-radius: 100px;
+    border: none;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--colors-main), 0.8);
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+div[data-name="nextstep-pointer"] {
+  border: 2px solid rgba(var(--colors-main),1);
+  pointer-events: auto !important;
+}
+
+@layer utilities {
+  .gradient-loader {
+    background: -moz-conic-gradient(from 39deg at 50% 50%,
+        rgba(219, 190, 50, 0.15) -48.36deg,
+        rgba(249, 190, 25, 0) 5.15deg,
+        rgb(var(--colors-dark-aquamarine)) 34.18deg,
+        #60be98 98.87deg,
+        #84be7a 160.89deg,
+        rgba(190, 190, 74, 0.5) 246.62deg,
+        rgba(219, 190, 50, 0.15) 311.64deg,
+        rgba(249, 190, 25, 0) 365.15deg);
+    background: -webkit-conic-gradient(from 39deg at 50% 50%,
+        rgba(219, 190, 50, 0.15) -48.36deg,
+        rgba(249, 190, 25, 0) 5.15deg,
+        rgb(var(--colors-dark-aquamarine)) 34.18deg,
+        #60be98 98.87deg,
+        #84be7a 160.89deg,
+        rgba(190, 190, 74, 0.5) 246.62deg,
+        rgba(219, 190, 50, 0.15) 311.64deg,
+        rgba(249, 190, 25, 0) 365.15deg);
+    background: conic-gradient(from 39deg at 50% 50%,
+        rgba(219, 190, 50, 0.15) -48.36deg,
+        rgba(249, 190, 25, 0) 5.15deg,
+        rgb(var(--colors-dark-aquamarine)) 34.18deg,
+        #60be98 98.87deg,
+        #84be7a 160.89deg,
+        rgba(190, 190, 74, 0.5) 246.62deg,
+        rgba(219, 190, 50, 0.15) 311.64deg,
+        rgba(249, 190, 25, 0) 365.15deg);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    i:before {
+      display: initial;
+      color: white;
+    }
+  }
+
+  .fixed-container {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .md-editor-custom .w-md-editor-text-pre > code, 
+  .md-editor-custom .w-md-editor-text-input {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  .md-editor-custom .w-md-editor-bar {
+    display: none;
+  }
+
+  .md-editor-custom .w-md-editor-text {
+    min-height: 10px !important;
+    padding: 0; 
+  }
+}
+
+@layer components {
+  .range-slider {
+    --track-percentage: 0%;
+    background: linear-gradient(to right,
+        color-mix(in srgb, var(--custom-color) 100%, transparent 50%) var(--track-percentage),
+        var(--colors-white-opacity) var(--track-percentage));
+  }
+
+  .range-slider:before {
+    content: attr(data-value);
+    @apply absolute bottom-1/2 text-dark-aquamarine transition-all duration-0 -translate-x-1/3;
+    left: var(--track-percentage);
+  }
+
+
+  .range-slider::-webkit-slider-thumb {
+    @apply appearance-none size-3 rounded-full cursor-pointer;
+    transform: translateX(calc(var(--track-percentage)));
+    border: 2px solid var(--custom-color);
+    background-color: var(--custom-color);
+  }
+
+  .range-slider::-moz-range-thumb {
+    @apply size-3 rounded-full cursor-pointer;
+    transform: translateX(calc(var(--track-percentage)));
+    border: 2px solid var(--custom-color);
+    background-color: var(--custom-color);
+  }
+}

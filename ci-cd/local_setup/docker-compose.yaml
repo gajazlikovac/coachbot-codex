@@ -1,0 +1,45 @@
+name: studio-coachbotai-local
+services:
+  app-coachbotai:
+    image: app-coachbotai:local
+    container_name: app-coachbotai
+    restart: always
+    env_file:
+      - .env_app_local
+    networks:
+      - custom-network
+
+  timescale-db:
+    image: timescale-db-with-apache-age:local
+    container_name: timescale-db
+    restart: always
+    env_file:
+      - .env_db_timescale_local
+    volumes:
+       - ./postgresql-data-timescale:/home/postgres/pgdata/data
+       - ./pgvectorscale.sql:/docker-entrypoint-initdb.d/009_install_pgvectorscale.sql
+       - ./apache_age.sql:/docker-entrypoint-initdb.d/010_install_apache_age.sql
+    networks:
+      - custom-network
+    ports:
+      - 38178:5432
+
+  traefik:
+    image: traefik:v3.3
+    container_name: traefik
+    restart: always
+    command:
+      - "--configFile=/etc/traefik/traefik.yaml"
+    ports:
+      - 8080:8080
+      #- 443:443
+    volumes:
+      - ./traefik.yaml:/etc/traefik/traefik.yaml
+      - ./dynamic.yaml:/etc/traefik/dynamic.yaml
+      #- ./acme.json:/etc/traefik/acme.json
+    networks: 
+      - custom-network
+
+networks:
+  custom-network:
+    name: custom-network

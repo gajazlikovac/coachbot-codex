@@ -1,0 +1,11 @@
+{
+  "General": {
+    "Header": {
+      "navigation": {
+        "0": "Chat",
+        "1": "Instructions",
+        "2": "Configuration"
+      }
+    }
+  }
+}
