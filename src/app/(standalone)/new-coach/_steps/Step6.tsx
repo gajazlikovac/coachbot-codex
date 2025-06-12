@@ -9,7 +9,7 @@ export default function Step6({ question, value, onChange }: StepProps) {
       <p className="text-center text-lg text-main">{question}</p>
       <Input
         id={`answer-6`}
-        value={value}
+        initialValue={value}
         onChange={(e) => onChange((e.target as HTMLInputElement).value)}
         inputClassName="border-main bg-transparent"
         readOnly={false}
