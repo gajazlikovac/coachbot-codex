@@ -15,8 +15,12 @@ import Step8, { Step8Title } from "../_steps/Step8";
 import Step9, { Step9Title } from "../_steps/Step9";
 import Step10, { Step10Title } from "../_steps/Step10";
 
+const data = require('./step_data.json');
+
 export default function NewCoach() {
-  const questions = Array.from({ length: 10 }, (_, i) => `Who is your AI assistant intended to engage with? ${i + 1}`);
+  const steps_data = Array.from({ length: 10 }, (_, i) => {
+    return data[`step_${i + 1}`];
+  });
   const [answers, setAnswers] = useState<string[]>(Array(10).fill(""));
   const [step, setStep] = useState(0);
 
@@ -83,7 +87,7 @@ export default function NewCoach() {
 
         <div className="flex items-center justify-center gap-x-4">
           <div className="flex gap-x-2">
-            {questions.map((_, i) => (
+            {steps_data.map((_, i) => (
               <span
           key={i}
           className={`h-2 w-2 rounded-full ${i === step ? "bg-dark-aquamarine" : "bg-gray-400/50"}`}
@@ -91,7 +95,7 @@ export default function NewCoach() {
             ))}
           </div>
           <span className="text-sm text-white">
-            {step + 1}/{questions.length}
+            {step + 1}/{steps_data.length}
           </span>
         </div>
 
@@ -99,9 +103,10 @@ export default function NewCoach() {
           const StepComponent = steps[step];
           return (
         <StepComponent
-          question={questions[step]}
-          subquestion={"e.g., new leads, current clients, HR professionals, startup founders, etc."}
-          placeholder={"Describe your target audience"}
+          question={steps_data[step].question}
+          category={steps_data[step].category}
+          subquestion={steps_data[step].subquestion}
+          placeholder={steps_data[step].placeholder}
           value={answers[step]}
           onChange={(val) => handleChange(step, val)}
         />
@@ -116,16 +121,23 @@ export default function NewCoach() {
             disabled={step === 0}
             className="cbi-arrow-left aspect-square h-12 text-xl bg-white/10"
           />
-          <Button
-            onClick={nextStep}
+            <Button
+            onClick={() => {
+              if (step === steps_data.length - 1) {
+              window.location.href = './summary';
+              } else {
+              nextStep();
+              }
+            }}
             variant="solid"
             color="light"
-            disabled={step === questions.length - 1}
-            className="flex h-12 items-center gap-x-2 w-40"
-          >
+            className={`flex h-12 items-center gap-x-2 w-48 ${
+              step === steps_data.length - 1 ? 'bg-dark-aquamarine text-white' : ''
+            }`}
+            >
             <i className="cbi-arrow-right text-xl" />
-            Next
-          </Button>
+            {step === steps_data.length - 1 ? 'Review & Create' : 'Next'}
+            </Button>
         </div>
       </div>
     </div>

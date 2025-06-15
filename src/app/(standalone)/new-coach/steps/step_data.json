@@ -1,0 +1,62 @@
+{
+    "step_1": {
+        "question": "Who is your AI assistant intended to engage with?",
+        "category": "",
+        "subquestion": "e.g., new leads, current clients, HR professionals, startup founders, etc.",
+        "placeholder": "Describe your target audience…"
+    },
+    "step_2": {
+        "question": "What is the assistant’s core goal or purpose?",
+        "category": "",
+        "subquestion": "Examples: \n•  Acquire new clients\n•  Onboard users post-signup\n•  Support clients between sessions\n•  Help users complete a course or journey",
+        "placeholder": ""
+    },
+    "step_3": {
+        "question": "How should your AI assistant engage with people?",
+        "category": "Methodology",
+        "subquestion": "e.g. ICF Coaching, CBT, Motivational Interviewing, Mentorship",
+        "placeholder": ""
+    },
+    "step_4": {
+        "question": "How should your AI assistant engage with people?",
+        "category": "Tone",
+        "subquestion": "Empathic, Direct, Friendly, Professional, Playful, etc.",
+        "placeholder": ""
+    },
+    "step_5": {
+        "question": "How should your AI assistant engage with people?",
+        "category": "Interaction Style",
+        "subquestion": "e.g., Reflective Questioning, Affirm + Probe, Directive Guidance, etc.",
+        "placeholder": ""
+    },
+    "step_6": {
+        "question": "Help your assistant understand your voice, content, and approach.",
+        "category": "Links",
+        "subquestion": "Website, social profiles, relevant URLs",
+        "placeholder": "Enter URL"
+    },
+    "step_7": {
+        "question": "Help your assistant understand your voice, content, and approach.",
+        "category": "Files",
+        "subquestion": "Write-ups, transcripts, newsletters, books (with a reminder: Only upload content you own or have rights to use.)",
+        "placeholder": ""
+    },
+    "step_8": {
+        "question": "Define how your AI Coach is presented and how it handles session data.",
+        "category": "Name",
+        "subquestion": "Give your AI Coach a clear and recognizable name your users can relate to.",
+        "placeholder": ""
+    },
+    "step_9": {
+        "question": "Define how your AI Coach is presented and how it handles session data.",
+        "category": "Description",
+        "subquestion": "Give a short intro that explains what your AI Coach does and how it can help.",
+        "placeholder": ""
+    },
+    "step_10": {
+        "question": "Define how your AI Coach is presented and how it handles session data.",
+        "category": "Transcript Sharing",
+        "subquestion": "Choose how session transcripts are handled — fully share, share summaries, or keep private to protect user confidentiality - details in Terms & Conditions.",
+        "placeholder": ""
+    }
+}
