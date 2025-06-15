@@ -5,13 +5,15 @@ import { StepProps } from "./StepProps";
 
 export default function Step3({ question, subquestion, placeholder, value, onChange }: StepProps) {
   return (
-    <div className="flex w-full max-w-md flex-col gap-y-4">
-      <p className="text-center text-lg text-main">{question}</p>
+    <div className="flex w-full max-w-xl flex-col gap-y-4">
+      <p className="text-center text-2xl text-main font-bold">{question}</p>
+      <p className="text-center text-base text-gray-400 -mt-3">{subquestion}</p>
       <Input
         id={`answer-3`}
         initialValue={value}
+        placeholder={placeholder + "..."}
         onChange={(e) => onChange((e.target as HTMLInputElement).value)}
-        inputClassName="border-main bg-transparent"
+        inputClassName="border-white/60 bg-white/20"
         readOnly={false}
       />
     </div>
@@ -20,6 +22,6 @@ export default function Step3({ question, subquestion, placeholder, value, onCha
 
 export function Step3Title() {
   return (
-    <h1 className="text-2xl font-bold text-main">Step 3</h1>
+    <h1 className="text-xl font-bold text-dark-aquamarine">Step 3</h1>
   );
 }
