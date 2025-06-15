@@ -10,10 +10,11 @@ export default function Step6({ question, subquestion, placeholder, value, onCha
       <p className="text-center text-base text-gray-400 -mt-3">{subquestion}</p>
       <Input
         id={`answer-6`}
+        type="textarea"
         initialValue={value}
         placeholder={placeholder + "..."}
-        onChange={(e) => onChange((e.target as HTMLInputElement).value)}
-        inputClassName="border-white/60 bg-white/20"
+        onChange={(e) => onChange((e.target as HTMLTextAreaElement).value)}
+        inputClassName="border-white/60 bg-white/20 !max-h-28"
         readOnly={false}
       />
     </div>
