@@ -64,9 +64,11 @@ export default function Step6({
     });
   };
 
+
   return (
-    <div className="flex w-full max-w-xl flex-col gap-y-4">
+    <div className="flex w-full max-w-2xl flex-col gap-y-4">
       <p className="text-center text-2xl text-main font-bold">{question}</p>
+      <p className="text-center text-3xl text-main font-bold">{category}</p>
       <p className="text-center text-base text-gray-400 -mt-3">{subquestion}</p>
 
       {rows.map((row, i) => (
@@ -111,6 +113,6 @@ export default function Step6({
 
 export function Step6Title() {
   return (
-    <h1 className="text-xl font-bold text-dark-aquamarine">Step 6</h1>
+    <h1 className="text-xl font-bold text-dark-aquamarine">SOURCE KNOWLEDGE UPLOAD</h1>
   );
 }

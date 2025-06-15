@@ -3,16 +3,17 @@
 import { Input } from "@/shared/Input";
 import { StepProps } from "./StepProps";
 
-export default function Step3({ question, subquestion, placeholder, value, onChange }: StepProps) {
+export default function Step3({ question, category, subquestion, placeholder, value, onChange }: StepProps) {
   return (
-    <div className="flex w-full max-w-xl flex-col gap-y-4">
+    <div className="flex w-full max-w-2xl flex-col gap-y-4">
       <p className="text-center text-2xl text-main font-bold">{question}</p>
+      <p className="text-center text-3xl text-main font-bold">{category}</p>
       <p className="text-center text-base text-gray-400 -mt-3">{subquestion}</p>
       <Input
         id={`answer-3`}
         type="textarea"
         initialValue={value}
-        placeholder={placeholder + "..."}
+        placeholderKey={placeholder}
         onChange={(e) => onChange((e.target as HTMLTextAreaElement).value)}
         inputClassName="border-white/60 bg-white/20 !max-h-28"
         readOnly={false}
@@ -23,6 +24,6 @@ export default function Step3({ question, subquestion, placeholder, value, onCha
 
 export function Step3Title() {
   return (
-    <h1 className="text-xl font-bold text-dark-aquamarine">Step 3</h1>
+    <h1 className="text-xl font-bold text-dark-aquamarine">ENGAGEMENT STYLE & METHODOLOGY</h1>
   );
 }
