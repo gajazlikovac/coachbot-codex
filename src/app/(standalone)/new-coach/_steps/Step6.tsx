@@ -24,7 +24,12 @@ export default function Step6({
   });
 
   const updateParent = (r: { value: string; added: boolean }[]) => {
-    onChange(r.filter((row) => row.added).map((row) => row.value).join("\n"));
+    onChange(
+      r
+        .filter((row) => row.added)
+        .map((row) => row.value)
+        .join("\n"),
+    );
   };
 
   const handleInputChange = (index: number, val: string) => {
@@ -41,29 +46,23 @@ export default function Step6({
   const handleAddToggle = (index: number) => {
     setRows((prev) => {
       const copy = [...prev];
-      if (!copy[index].added) {
-        copy[index].added = true;
-      } else {
-        copy.splice(index, 1);
-      }
 
-      if (!copy.length) {
-        copy.push({ value: "", added: false });
+      if (!copy[index].added) {
+        // mark current row as added and insert a new empty row after it
+        copy[index].added = true;
+        copy.splice(index + 1, 0, { value: "", added: false });
+      } else {
+        // remove the row or clear it if it is the last remaining one
+        copy.splice(index, 1);
+        if (!copy.length) {
+          copy.push({ value: "", added: false });
+        }
       }
 
       updateParent(copy);
       return copy;
     });
   };
-
-  const handleAddRow = (index: number) => {
-    setRows((prev) => {
-      const copy = [...prev];
-      copy.splice(index + 1, 0, { value: "", added: false });
-      return copy;
-    });
-  };
-
 
   return (
     <div className="flex w-full max-w-2xl flex-col gap-y-4">
@@ -84,6 +83,7 @@ export default function Step6({
                 handleInputChange(i, (e.target as HTMLInputElement).value)
               }
               inputClassName="border-white/60 bg-white/20"
+              className="flex-grow"
               readOnly={false}
             />
             <Button
@@ -96,15 +96,6 @@ export default function Step6({
               {row.added ? "" : "Add"}
             </Button>
           </div>
-          {row.added && i === rows.length - 1 && (
-            <Button
-              type="button"
-              variant="solid"
-              color="gray"
-              className="cbi-add self-start aspect-square p-2 text-lg"
-              onClick={() => handleAddRow(i)}
-            />
-          )}
         </div>
       ))}
     </div>
@@ -113,6 +104,8 @@ export default function Step6({
 
 export function Step6Title() {
   return (
-    <h1 className="text-xl font-bold text-dark-aquamarine">SOURCE KNOWLEDGE UPLOAD</h1>
+    <h1 className="text-xl font-bold text-dark-aquamarine">
+      SOURCE KNOWLEDGE UPLOAD
+    </h1>
   );
 }
