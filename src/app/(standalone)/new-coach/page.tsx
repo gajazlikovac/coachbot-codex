@@ -14,11 +14,27 @@ export default function NewCoachWelcome() {
         className="cbi-close-circle fixed right-6 top-6 aspect-square w-12 shrink-0 px-3 py-0 text-lg text-main"
       />
       <Logo className="mx-auto h-10 w-auto" />
-      <h1 className="text-2xl font-bold text-main">
-        Welcome to the Coach Setup
+      <h1 className="text-center text-2xl font-bold uppercase text-white">
+        LET'S CREATE YOU AI COACH
       </h1>
-      <Button href="/new-coach/steps" variant="solid" color="light">
-        Start
+      <p className="max-w-md text-center text-light-gray">
+        You’re about to design a powerful assistant tailored to your coaching
+        style and goals. The process includes 10 short, focused steps — each
+        with a single question. You can respond by voice or text.
+      </p>
+      <div className="w-full max-w-md rounded-xl bg-white/30 p-4">
+        <p className="text-center text-light-gray">Example questions include:</p>
+        <p className="text-center text-white">“Who is your Coach for?” “What’s their main purpose?” “How should they speak or guide?”</p>
+      </div>
+      <p className="text-primary-green">Ready to Begin?</p>
+      <Button
+        href="/new-coach/steps"
+        variant="solid"
+        color="primary"
+        className="flex items-center gap-x-2"
+      >
+        <i className="cbi-add-square" />
+        Start Creating
       </Button>
     </div>
   );
