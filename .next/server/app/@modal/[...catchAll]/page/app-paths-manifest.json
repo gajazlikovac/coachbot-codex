@@ -1,0 +1,3 @@
+{
+  "/@modal/[...catchAll]/page": "app/@modal/[...catchAll]/page.js"
+}

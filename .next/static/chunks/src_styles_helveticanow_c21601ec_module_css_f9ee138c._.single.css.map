@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/styles/helveticanow_c21601ec.module.css"],"sourcesContent":["@font-face {\n    font-family: 'helveticaNow';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22../../public/HelveticaNow/HelveticaNowDisplay.woff2%22,%22preload%22:true,%22has_size_adjust%22:true}') format('woff2');\n    font-display: swap;\n    font-style: normal;\n}\n@font-face {\n    font-family: 'helveticaNow';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22../../public/HelveticaNow/HelveticaNowDisplay.woff%22,%22preload%22:true,%22has_size_adjust%22:true}') format('woff');\n    font-display: swap;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'helveticaNow Fallback';\n    src: local(\"Arial\");\n    ascent-override: 113.96%;\ndescent-override: 36.96%;\nline-gap-override: 0.00%;\nsize-adjust: 97.40%;\n\n}\n\n.className {\n    font-family: 'helveticaNow', 'helveticaNow Fallback';\n    \n}\n.variable {\n    --font-helvetica-now: 'helveticaNow', 'helveticaNow Fallback';\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;;AAMA;;;;;;;AAOA;;;;;;;;;AAUA;;;;AAIA"}}]
+}

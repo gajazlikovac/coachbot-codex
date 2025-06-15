@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["file:///Users/stefangajanovic/Desktop/coachbot/coachbot-codex/src/app/%28main%29/chat/page.tsx"],"sourcesContent":["import { Chat } from './_components';\n\nexport default async function ChatPage() {\n  return <Chat />;\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;;;;;;AAEe,eAAe;IAC5B,qBAAO,8OAAC,yLAAA,CAAA,OAAI;;;;;AACd","debugId":null}}]
+}

@@ -1,0 +1,10 @@
+{
+  "/(main)/chat/page": "app/(main)/chat/page.js",
+  "/(main)/content/page": "app/(main)/content/page.js",
+  "/(main)/dashboard/page": "app/(main)/dashboard/page.js",
+  "/(main)/instructions/page": "app/(main)/instructions/page.js",
+  "/(standalone)/new-coach/page": "app/(standalone)/new-coach/page.js",
+  "/(standalone)/new-coach/steps/page": "app/(standalone)/new-coach/steps/page.js",
+  "/api/sse/route": "app/api/sse/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

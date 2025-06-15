@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/styles/cbi_2cb9f026.module.css"],"sourcesContent":["@font-face {\n    font-family: 'cbi';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22../../public/IconFont/coachbot-icons.woff%22,%22preload%22:true,%22has_size_adjust%22:true}') format('woff');\n    font-display: swap;\n    font-weight: normal;font-style: normal;\n}\n@font-face {\n    font-family: 'cbi';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22../../public/IconFont/coachbot-icons.ttf%22,%22preload%22:true,%22has_size_adjust%22:true}') format('truetype');\n    font-display: swap;\n    font-weight: normal;font-style: normal;\n}\n\n@font-face {\n    font-family: 'cbi Fallback';\n    src: local(\"Arial\");\n    ascent-override: 93.75%;\ndescent-override: 6.25%;\nline-gap-override: 0.00%;\nsize-adjust: 100.00%;\n\n}\n\n.className {\n    font-family: 'cbi', 'cbi Fallback';\n    \n}\n.variable {\n    --font-cbi: 'cbi', 'cbi Fallback';\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;;;AAMA;;;;;;;;AAOA;;;;;;;;;AAUA;;;;AAIA"}}]
+}

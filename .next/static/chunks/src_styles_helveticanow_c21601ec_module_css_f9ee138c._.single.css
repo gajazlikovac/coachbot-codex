@@ -1,0 +1,33 @@
+/* [project]/src/styles/helveticanow_c21601ec.module.css [app-client] (css) */
+@font-face {
+  font-family: helveticaNow;
+  src: url("../media/HelveticaNowDisplay-s.p.91cf9f0e.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: helveticaNow;
+  src: url("../media/HelveticaNowDisplay-s.p.ab8d3fe9.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: helveticaNow Fallback;
+  src: local(Arial);
+  ascent-override: 113.96%;
+  descent-override: 36.96%;
+  line-gap-override: 0.0%;
+  size-adjust: 97.4%;
+}
+
+.helveticanow_c21601ec-module__UrvVba__className {
+  font-family: helveticaNow, helveticaNow Fallback;
+}
+
+.helveticanow_c21601ec-module__UrvVba__variable {
+  --font-helvetica-now: "helveticaNow", "helveticaNow Fallback";
+}
+
+/*# sourceMappingURL=src_styles_helveticanow_c21601ec_module_css_f9ee138c._.single.css.map*/

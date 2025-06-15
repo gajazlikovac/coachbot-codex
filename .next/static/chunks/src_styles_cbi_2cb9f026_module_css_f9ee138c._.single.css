@@ -1,0 +1,35 @@
+/* [project]/src/styles/cbi_2cb9f026.module.css [app-client] (css) */
+@font-face {
+  font-family: cbi;
+  src: url("../media/coachbot_icons-s.p.a97a6fea.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cbi;
+  src: url("../media/coachbot_icons-s.p.0bb8faa7.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cbi Fallback;
+  src: local(Arial);
+  ascent-override: 93.75%;
+  descent-override: 6.25%;
+  line-gap-override: 0.0%;
+  size-adjust: 100.0%;
+}
+
+.cbi_2cb9f026-module__1EVGDW__className {
+  font-family: cbi, cbi Fallback;
+}
+
+.cbi_2cb9f026-module__1EVGDW__variable {
+  --font-cbi: "cbi", "cbi Fallback";
+}
+
+/*# sourceMappingURL=src_styles_cbi_2cb9f026_module_css_f9ee138c._.single.css.map*/

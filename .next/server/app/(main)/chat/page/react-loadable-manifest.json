@@ -1,0 +1,23 @@
+{
+  "[project]/src/app/(main)/@sidebar/_components/ChatSidebar.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/app/(main)/@sidebar/_components/ChatSidebar.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_84d711eb._.js",
+      "static/chunks/src_app_(main)_@sidebar__components_ChatSidebar_tsx_8482140c._.js"
+    ]
+  },
+  "[project]/src/app/(main)/chat/_components/ControlPanel.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/app/(main)/chat/_components/ControlPanel.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_app_(main)_chat__components_ControlPanel_tsx_7a466f55._.js",
+      "static/chunks/src_app_(main)_chat__components_ControlPanel_tsx_dc3ab00c._.js"
+    ]
+  },
+  "[project]/src/app/(main)/chat/_components/Messages.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/app/(main)/chat/_components/Messages.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_app_(main)_chat__components_Messages_tsx_e99d5b69._.js",
+      "static/chunks/src_app_(main)_chat__components_Messages_tsx_dc3ab00c._.js"
+    ]
+  }
+}

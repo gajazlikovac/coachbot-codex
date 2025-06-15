@@ -1,0 +1,375 @@
+/* [project]/src/styles/icons.css [app-client] (css) */
+[class^="cbi-"], [class*=" cbi-"] {
+  speak: never;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-flex;
+  font-family: cbi, cbi Fallback !important;
+}
+
+.cbi-card-tick:before {
+  content: "";
+}
+
+.cbi-chart:before {
+  content: "";
+}
+
+.cbi-empty-wallet-remove:before {
+  content: "";
+}
+
+.cbi-health:before {
+  content: "";
+}
+
+.cbi-lock-slash .path1:before {
+  content: "";
+}
+
+.cbi-lock-slash .path2:before {
+  content: "";
+  margin-left: -.97168em;
+}
+
+.cbi-lock-slash .path3:before {
+  content: "";
+  margin-left: -.97168em;
+}
+
+.cbi-lock:before {
+  content: "";
+}
+
+.cbi-share1:before {
+  content: "";
+}
+
+.cbi-unlock:before {
+  content: "";
+}
+
+.cbi-whatsapp .path1:before {
+  content: "";
+  color: #fff;
+}
+
+.cbi-whatsapp .path2:before {
+  content: "";
+  color: #20b038;
+  margin-left: -1em;
+}
+
+.cbi-whatsapp .path3:before {
+  content: "";
+  color: #fff;
+  margin-left: -1em;
+}
+
+.cbi-whatsapp .path4:before {
+  content: "";
+  color: #fff;
+  margin-left: -1em;
+}
+
+.cbi-like:before {
+  content: "";
+}
+
+.cbi-refresh-empty:before {
+  content: "";
+}
+
+.cbi-arrow-left-circle:before {
+  content: "";
+}
+
+.cbi-calendar-circle:before {
+  content: "";
+}
+
+.cbi-calendar:before {
+  content: "";
+}
+
+.cbi-plant-growth:before {
+  content: "";
+}
+
+.cbi-copy-filled:before {
+  content: "";
+}
+
+.cbi-receipt-edit:before {
+  content: "";
+}
+
+.cbi-receipt:before {
+  content: "";
+}
+
+.cbi-star:before {
+  content: "";
+}
+
+.cbi-user:before {
+  content: "";
+}
+
+.cbi-archive:before {
+  content: "";
+}
+
+.cbi-card-pos:before {
+  content: "";
+}
+
+.cbi-copy:before {
+  content: "";
+}
+
+.cbi-dashboard:before {
+  content: "";
+}
+
+.cbi-import:before {
+  content: "";
+}
+
+.cbi-message-text:before {
+  content: "";
+}
+
+.cbi-people:before {
+  content: "";
+}
+
+.cbi-scroll:before {
+  content: "";
+}
+
+.cbi-setting-3:before {
+  content: "";
+}
+
+.cbi-share:before {
+  content: "";
+}
+
+.cbi-folder-add:before {
+  content: "";
+}
+
+.cbi-arrow-down-bold:before {
+  content: "";
+}
+
+.cbi-arrow-up-bold:before {
+  content: "";
+}
+
+.cbi-subtract:before {
+  content: "";
+}
+
+.cbi-export:before {
+  content: "";
+}
+
+.cbi-setting-2:before {
+  content: "";
+}
+
+.cbi-add-square:before {
+  content: "";
+}
+
+.cbi-paperclip:before {
+  content: "";
+}
+
+.cbi-document-upload:before {
+  content: "";
+}
+
+.cbi-document-download:before {
+  content: "";
+}
+
+.cbi-cpu-empty:before {
+  content: "";
+}
+
+.cbi-image-placeholder:before {
+  content: "";
+}
+
+.cbi-moon:before {
+  content: "";
+}
+
+.cbi-sun:before {
+  content: "";
+}
+
+.cbi-trash-fill:before {
+  content: "";
+}
+
+.cbi-shield-security:before {
+  content: "";
+}
+
+.cbi-logout:before {
+  content: "";
+}
+
+.cbi-kanban:before {
+  content: "";
+}
+
+.cbi-gallery-add:before {
+  content: "";
+}
+
+.cbi-finger-scan:before {
+  content: "";
+}
+
+.cbi-document-text:before {
+  content: "";
+}
+
+.cbi-close-circle-2:before {
+  content: "";
+}
+
+.cbi-bubble:before {
+  content: "";
+}
+
+.cbi-checkmark:before {
+  content: "";
+}
+
+.cbi-arrow-right-circle:before {
+  content: "";
+}
+
+.cbi-tick-circle-fill:before {
+  content: "";
+}
+
+.cbi-eye:before {
+  content: "";
+}
+
+.cbi-eye-slash:before {
+  content: "";
+}
+
+.cbi-close:before {
+  content: "";
+}
+
+.cbi-edit-2:before {
+  content: "";
+}
+
+.cbi-add:before {
+  content: "";
+}
+
+.cbi-archive-tick:before {
+  content: "";
+}
+
+.cbi-arrow-down:before {
+  content: "";
+}
+
+.cbi-close-circle:before {
+  content: "";
+}
+
+.cbi-info-circle:before {
+  content: "";
+}
+
+.cbi-Loader:before {
+  content: "";
+}
+
+.cbi-message-question:before {
+  content: "";
+}
+
+.cbi-refresh:before {
+  content: "";
+}
+
+.cbi-undo:before {
+  content: "";
+}
+
+.cbi-trash:before {
+  content: "";
+}
+
+.cbi-cpu:before {
+  content: "";
+}
+
+.cbi-more:before {
+  content: "";
+}
+
+.cbi-tick-circle:before {
+  content: "";
+}
+
+.cbi-arrow-left:before {
+  content: "";
+}
+
+.cbi-arrow-right:before {
+  content: "";
+}
+
+.cbi-arrow-up:before {
+  content: "";
+}
+
+.cbi-config:before {
+  content: "";
+}
+
+.cbi-edit:before {
+  content: "";
+}
+
+.cbi-messages:before {
+  content: "";
+}
+
+.cbi-profile-circle:before {
+  content: "";
+}
+
+.cbi-send:before {
+  content: "";
+}
+
+.cbi-setting:before {
+  content: "";
+}
+
+/*# sourceMappingURL=src_styles_icons_css_f9ee138c._.single.css.map*/

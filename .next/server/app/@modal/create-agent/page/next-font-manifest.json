@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/@modal/create-agent/page": [
+      "static/media/coachbot_icons-s.p.0bb8faa7.ttf",
+      "static/media/coachbot_icons-s.p.a97a6fea.woff",
+      "static/media/HelveticaNowDisplay-s.p.ab8d3fe9.woff",
+      "static/media/HelveticaNowDisplay-s.p.91cf9f0e.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}
