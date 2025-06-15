@@ -7,6 +7,7 @@ import { StepProps } from "./StepProps";
 
 export default function Step6({
   question,
+  category,
   subquestion,
   placeholder,
   value,
