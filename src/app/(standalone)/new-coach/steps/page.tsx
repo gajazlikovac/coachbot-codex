@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/shared/Button";
 import { Logo } from "@/shared/Logo";
+import { PrivateRoutes } from "@/lib/constants";
 import Step1 from "../_steps/Step1";
 import Step2 from "../_steps/Step2";
 import Step3 from "../_steps/Step3";
@@ -45,7 +46,13 @@ export default function NewCoach() {
   const nextStep = () => setStep((s) => Math.min(steps.length - 1, s + 1));
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-y-6 p-6">
+    <div className="relative flex min-h-screen flex-col items-center justify-center gap-y-6 p-6">
+      <Button
+        href={PrivateRoutes.dashboard}
+        variant="solid"
+        color="gray"
+        className="cbi-close-circle fixed right-6 top-6 aspect-square w-12 shrink-0 px-3 py-0 text-lg text-main"
+      />
       <Logo className="mx-auto mb-4 h-10 w-auto" />
       <div className="mb-4 flex justify-center gap-x-2">
         {questions.map((_, i) => (
